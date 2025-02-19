@@ -12,34 +12,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// var _ = Describe("Discover", func() {
-
-// 	var _ = Context("when running without flags", func() {
-
-// 		var (
-// 			logger logr.Logger
-// 			out    bytes.Buffer
-// 			err    bytes.Buffer
-// 		)
-
-// 		var _ = BeforeEach(func() {
-// 			logrusLog := logrus.New()
-// 			logrusLog.SetOutput(&out)
-// 			logrusLog.SetFormatter(&logrus.TextFormatter{})
-// 			logger = logrusr.New(logrusLog)
-// 		})
-// 		var _ = It("should print the help message when no flags are used containing entries for each template engine", func() {
-// 			_, c := NewDiscoverCloudFoundryCommand(logger)
-// 			c.SetOut(&out)
-// 			c.SetErr(&err)
-// 			c.SetArgs([]string{})
-// 			_, err := c.ExecuteC()
-// 			Expect(err).NotTo(HaveOccurred())
-// 			Expect(out.String()).To(ContainSubstring("helm        generate the helm template manifests"))
-// 		})
-// 	})
-// })
-
 var _ = Describe("Discover Manifest", func() {
 	var (
 		out          bytes.Buffer
